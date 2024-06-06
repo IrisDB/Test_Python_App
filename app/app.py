@@ -3,6 +3,7 @@ from sdk.moveapps_io import MoveAppsIo
 from movingpandas import TrajectoryCollection
 import logging
 
+# This is a test to see if it works with PyCharm
 
 class App(object):
 
