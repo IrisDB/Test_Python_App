@@ -38,7 +38,7 @@ class App(object):
             logging.warning("Nothing to plot")
         
         # showcase accessing auxiliary files
-        auxiliary_file_a = MoveAppsIo.get_auxiliary_file_path("auxiliary-file-a")
+        auxiliary_file_a = MoveAppsIo.get_auxiliary_file_path("aux_id_A")
         with open(auxiliary_file_a, 'r') as f:
             logging.info(f.read())
             

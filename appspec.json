@@ -9,15 +9,28 @@
       "type": "STRING"
     },
     {
-      "id": "auxiliary-file-a",
+      "id": "aux_id_A",
       "name": "Your message",
       "description": "You can personalize the app by providing a file.",
       "type": "USER_FILE"
+    },
+    {
+      "id": "aux_id_B",
+      "name": "My auxiliary zipfile",
+      "description": "Files for running the XY analysis. The App expects a zipped file set with the extension: 1. `.cpg`, 2. `.dbf`, 3. `.prj`, 4. `.shp`, 5. `.shx`.",
+      "type": "USER_FILE"
+    },
+    {
+      "id": "year",
+      "name": "The year",
+      "description": "Enter the year for which you want to keep the data",
+      "defaultValue": 2024,
+      "type": "INTEGER"
     }
   ],
   "providedAppFiles": [
     {
-      "settingId": "auxiliary-file-a",
+      "settingId": "aux_id_A",
       "from": "resources/auxiliary/user-files/provided-app-files/auxiliary-file-a/sample.txt"
     }
   ],
