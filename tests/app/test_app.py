@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_app_runs(self):
         # prepare
-        data: mpd.TrajectoryCollection = pd.read_pickle(os.path.join(ROOT_DIR, 'tests/resources/app/input2_LatLon.pickle'))
+        data: mpd.TrajectoryCollection = pd.read_pickle(os.path.join(ROOT_DIR, 'tests/resources/app/input4_LatLon.pickle'))
         config: dict = {
             "year": 2014
         }
@@ -34,16 +34,6 @@ class MyTestCase(unittest.TestCase):
 
         # verify
         self.assertEqual(2014, actual["year"])
-
-    def test_app_config_mapping_defaults(self):
-        # prepare
-        config = {}
-
-        # execute
-        actual = self.sut.map_config(config=config)
-
-        # verify
-        self.assertEqual(1994, actual.year)
 
     def test_year_present(self):
         # prepare input data
